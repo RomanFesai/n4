@@ -56,74 +56,74 @@ if (!empty($messages)) {
       				</div>
       			</div>
       			<div class="my-2">
-      				<label>Sex</label>
-      				<div class="form-check">
-        				<label class="form-check-label">
-          					<input type="radio" class="form-check-input" name="Rad" <?php if ($errors['Rad']) {print 'class="error"';} ?> id="SMale" value="MALE" <?php if ($values['Rad']=="MALE")print'checked=""'; ?>"/>Male
-       					</label>
-      				</div>
-      				<div class="form-check">
-      					<label class="form-check-label">
-          					<input type="radio" class="form-check-input" name="Rad" <?php if ($errors['Rad']) {print 'class="error"';} ?> id="SFe" value="FEMALE" <?php if ($values['Rad']=="FEMALE")print'checked=""'; ?>"/>Female
-        				</label>
-      				</div>
-      			</div>
+              <label>Sex</label>
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Rad" id="SMale" value="MALE" <?php if ($values['PO']=='MALE') print 'checked=""'; ?> >Male
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Rad" id="SFe" value="FEMALE" <?php if ($values['PO']=='FEMALE') print 'checked=""'; ?>>Female
+                </label>
+              </div>
+            </div>
       			<div class="my-2">
-      				<label>Number of limbs</label>
-      				<div class="d-flex justify-content-between">
-	      				<div class="form-check">
-	        				<label class="form-check-label">
-	          					<input type="radio" class="form-check-input" name="Limbs" <?php if ($errors['Limbs']) {print 'class="error"';} ?> id="0" value="0" <?php if ($values['Limbs']=="0")print'checked=""'; ?>"/>0
-	       					</label>
-	      				</div>
-	      				<div class="form-check">
-	      					<label class="form-check-label">
-	          					<input type="radio" class="form-check-input" name="Limbs" <?php if ($errors['Limbs']) {print 'class="error"';} ?> id="1" value="1" <?php if ($values['Limbs']=="1")print'checked=""'; ?>"/>1
-	        				</label>
-	      				</div>
-	      				<div class="form-check">
-	      					<label class="form-check-label">
-	          					<input type="radio" class="form-check-input" name="Limbs" <?php if ($errors['Limbs']) {print 'class="error"';} ?> id="2" value="2" <?php if ($values['Limbs']=="2")print'checked=""'; ?>"/>2
-	        				</label>
-	      				</div>
-	      				<div class="form-check">
-	      					<label class="form-check-label">
-	          					<input type="radio" class="form-check-input" name="Limbs" <?php if ($errors['Limbs']) {print 'class="error"';} ?> id="3" value="3" <?php if ($values['Limbs']=="3")print'checked=""'; ?>"/>3
-	        				</label>
-	      				</div>
-	      				<div class="form-check">
-	      					<label class="form-check-label">
-	          					<input type="radio" class="form-check-input" name="Limbs" <?php if ($errors['Limbs']) {print 'class="error"';} ?> id="4" value="4" <?php if ($values['Limbs']=="4")print'checked=""'; ?>"/>4
-	        				</label>
-	      				</div>
-	      			</div>
-      			</div>
-      			<div class="my-2">
-      				<div class="form-group">
-      					<label for="exampleSelect2">Superpowers</label>
-      					<select multiple="multiple" class="form-control" name="SP" <?php if ($errors['SP']) {print 'class="error"';} ?> value="<?php print $values['SP']; ?>"/>
-        				<option>Great power</option>
-       					<option>Invisibility</option>
-				        <option>Absolute knowledge</option>
-				        <option>Fundamental immortality</option>
-				      </select>
-				    </div>
-      			</div>
-      			<div class="my-2">
-      				<div class="form-group">
-      					<label>Biography</label>
-      					<textarea class="form-control" name="BG" <?php if ($errors['BG']) {print 'class="error"';} ?> rows="3" value="<?php print $values['BG']; ?>"></textarea>
-    				</div>	
-      			</div>
-      			<div class="my-2">
-      				<div class="form-check">
-        				<label><input class="form-check-input" type="checkbox" name="CH" <?php if ($errors['CH']) {print 'class="error"';} ?> value="Yes" <?php if ($values['CH']=="Yes")print'checked=""'; ?>"/>I got acquainted with the contract
-        				</label>
-      				</div>
-      			</div>
-      			<button type="submit" class="btn btn-primary">Send</button>
-			</div>
-		</form>
-	</div>
+              <label>Number of limbs</label>
+              <div class="d-flex justify-content-between">
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="Limbs" id="0" value="0" <?php if ($values['LI']=='0') print 'checked=""'; ?>>0
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="Limbs" id="1" value="1" <?php if ($values['LI']=='1') print 'checked=""'; ?>>1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="Limbs" id="2" value="2" <?php if ($values['LI']=='2') print 'checked=""'; ?>>2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="Limbs" id="3" value="3" <?php if ($values['LI']=='3') print 'checked=""'; ?>>3
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="Limbs" id="4" value="4" <?php if ($values['LI']=='4') print 'checked=""'; ?>>4
+                  </label>
+                </div>
+              </div>
+            </div>
+      			<div class="my-2 <?php if ($errors['SP']) {print 'class="error"';} ?>">
+              <div class="form-group" value="">
+                <label for="exampleSelect2">Superpowers</label>
+                <select multiple="" class="form-control" name="SP[]">
+                <option <?php for ($i=0;$i<count($values, COUNT_RECURSIVE)-10;$i++) if ($values['SP'][$i]=='Great power') print 'selected=""' ?>>Great power</option>
+                <option <?php for ($i=0;$i<count($values, COUNT_RECURSIVE)-10;$i++) if ($values['SP'][$i]=='Invisibility') print 'selected=""' ?>>Invisibility</option>
+                <option <?php for ($i=0;$i<count($values, COUNT_RECURSIVE)-10;$i++) if ($values['SP'][$i]=='Absolute knowledge') print 'selected=""' ?>>Absolute knowledge</option>
+                <option <?php for ($i=0;$i<count($values, COUNT_RECURSIVE)-10;$i++) if ($values['SP'][$i]=='Fundamental immortality') print 'selected=""' ?>>Fundamental immortality</option>
+              </select>
+            </div>
+            </div>
+      			 <div class="my-2">
+              <div class="form-group">
+                <label>Biography</label>
+                <textarea class="form-control <?php if ($errors['BG']) {print 'class="error"';} ?>" name="BG" rows="3"><?php print $values['BG']; ?></textarea>
+            </div>  
+            </div>
+            <div class="my-2 jumbotron p-2 <?php if ($errors['CH']) {print 'class="error"';} ?>"">
+              <div class="form-check">
+                <label><input class="form-check-input" type="checkbox" name="CH" value="Yes" <?php print $values['CH']; ?>>I got acquainted with the contact
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
